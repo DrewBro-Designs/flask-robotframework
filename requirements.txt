@@ -1,0 +1,4 @@
+Flask
+robotframework
+robotframework-selenium2library
+selenium==3.4.0

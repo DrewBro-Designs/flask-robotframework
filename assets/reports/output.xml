@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20181130 18:05:27.587" generator="Robot 3.0.4 (Python 2.7.15 on darwin)">
+<suite source="/Users/drew/Code/python/flask_testing/assets/tests/tests.robot" id="s1" name="Tests">
+<test id="s1-t1" name="Search on google">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${SEARCH_ENGINE}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<status status="PASS" endtime="20181130 18:05:32.091" starttime="20181130 18:05:27.736"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="tsf"]/div[2]/div/div[1]/div/div[1]/input</arg>
+<arg>${SEARCH_TERM}</arg>
+</arguments>
+<status status="PASS" endtime="20181130 18:05:32.255" starttime="20181130 18:05:32.091"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="PASS" endtime="20181130 18:05:33.426" starttime="20181130 18:05:32.255"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="rso"]/div[1]/div/div[1]/div/div/div[1]/a</arg>
+</arguments>
+<status status="PASS" endtime="20181130 18:05:33.515" starttime="20181130 18:05:33.426"></status>
+</kw>
+<kw name="Delete All Cookies" library="Selenium2Library">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" endtime="20181130 18:05:35.897" starttime="20181130 18:05:33.515"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181130 18:05:35.986" starttime="20181130 18:05:35.897"></status>
+</kw>
+<status status="PASS" endtime="20181130 18:05:35.987" critical="yes" starttime="20181130 18:05:27.735"></status>
+</test>
+<test id="s1-t2" name="New test Case">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${SEARCH_ENGINE}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<status status="PASS" endtime="20181130 18:05:38.703" starttime="20181130 18:05:35.989"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="tsf"]/div[2]/div/div[1]/div/div[1]/input</arg>
+<arg>HAHAHAHAHAHAA</arg>
+</arguments>
+<status status="PASS" endtime="20181130 18:05:38.864" starttime="20181130 18:05:38.704"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by ``locator``.</doc>
+<status status="PASS" endtime="20181130 18:05:39.423" starttime="20181130 18:05:38.865"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="rso"]/div[3]/div/div[1]/div/div/div[1]/a[1]</arg>
+</arguments>
+<status status="PASS" endtime="20181130 18:05:41.748" starttime="20181130 18:05:39.423"></status>
+</kw>
+<kw name="Delete All Cookies" library="Selenium2Library">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" endtime="20181130 18:05:41.769" starttime="20181130 18:05:41.748"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20181130 18:05:41.842" starttime="20181130 18:05:41.769"></status>
+</kw>
+<status status="PASS" endtime="20181130 18:05:41.842" critical="yes" starttime="20181130 18:05:35.988"></status>
+</test>
+<status status="PASS" endtime="20181130 18:05:41.844" starttime="20181130 18:05:27.590"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Tests" pass="2">Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
