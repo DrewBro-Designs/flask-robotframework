@@ -1,4 +1,5 @@
 Flask
 robotframework
 robotframework-selenium2library
+gunicorn
 selenium==3.4.0
