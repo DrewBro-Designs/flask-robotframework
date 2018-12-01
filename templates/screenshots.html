@@ -1,0 +1,13 @@
+<!doctype html>
+<title>Capiche Robotframework Screenshots</title>
+
+<section class="content">
+    <div class="screenshot-link-list">
+        <ul class="link-list" id="screenshot-list">
+            {% for picture in pictures %}
+                <li class="link-list-item"><a href={{ picture }}>link</a> </li>
+                <img width='200px' src="{{ picture }}">
+            {% endfor %}
+        </ul>
+    </div>
+</section>

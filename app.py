@@ -23,5 +23,18 @@ def run_tests():
     robot.run('assets/tests/tests.robot', stdout=log_file, outputdir='assets/reports')
     return redirect(url_for('log'), code=302)
 
+@app.route('/screenshots')
+def get_screenshots():
+    pictures = []
+    for file in os.listdir('assets/reports'):
+        if file.endswith('.png'):
+            link = '/screenshots/' + file
+            pictures.append(link)
+    return render_template('screenshots.html', pictures=pictures)
+
+@app.route('/screenshots/<screenshot>')
+def get_screenshot(screenshot):
+    return open('assets/reports/{screenshot}'.format(screenshot=screenshot)).read()
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port='3000', debug=True)
